@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/x-icon" href="img/wirestocklogo.png">
+
+	<title>Quiz App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="home-box custom-box">
+	<h3>Instructions</h3>
+	<p>Total numer of questions: <span class="total-questions"></span></p>
+	<li>Once you select your answer, it can't be undone.</li>
+	<li>You can't exit from the Test.</li>
+	<li>You'll get points on the basis of your correct answers.</li>
+	<button type="button" class="btn" onclick="startQuiz()">Start The Test</button>
+	
+</div>
+<div class="quiz-box custom-box hide ">
+	<div class="time-text">Timer
+	 <div class="time-header"><text id="time001"><span  class="time001"></span></text></div>
+     </div>
+	<div class="question-number">
+	
+	</div>
+   <div class="question-title"></div>
+	<div class="question-text"></div>
+	<div class="question-container">
+	</div>
+	<div class="next-button-btn">
+		<button type="button" class="btn" onclick="next()">Next</button>
+	</div>
+	<div class="answer-indicator">
+
+	</div>
+</div>
+
+<div class="result-box custom-box hide">
+	<h1>Test Results</h1>
+	<table>
+		<tr>
+			<td>Total Questions</td>
+			<td><span class="total-question"></span></td>
+		</tr>
+		<tr>
+			<td>Correct</td>
+			<td><span class="total-correct"></span></td>
+		</tr>
+		<tr>
+			<td>Wrong</td>
+			<td><span class="total-wrong"></span></td>
+		</tr>
+		<tr>
+			<td>Percentage</td>
+			<td><span class="Percentage"></span></td>
+		</tr>
+		<tr>
+			<td>Total Score</td>
+			<td><span class="total-score"></span></td>
+		</tr>
+	</table>
+	<label class="Name-Input">
+      <input maxlength=37 id="NameInput" type="text" required/>
+	  <span class="placeholder"></span>
+	</label>
+	<button type="button" class="btn" onclick="done()">Done</button>
+	<button type="button" class="btn" onclick="webhook()">test</button>
+</div>
+
+<div class="end-box custom-box hide">
+	<h3 class="end-text">  Thanks for Completing the test </h3>
+	<p class="end-text">After your responses have been assessed, you will be contacted.</p>
+	<center><img src="img/wirestock.png" alt="" class="end-text"></center>
+
+</div>
+
+<script src="js/question.js"></script>
+<script src="js/app.js"></script>
+<script src="js/webhook.js"></script>
+
+</body>
+</html>
+
+
