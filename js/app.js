@@ -32,6 +32,7 @@ function setAvailableQuestions(){
    
 }
 
+//test
 //set question number
 function getNewQuestion(){
     questionNumber.innerHTML = "Question " + (questionCounter + 1) + " of " + quiz.length;
